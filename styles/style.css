@@ -26,6 +26,7 @@ header{
     background: #fff;
     position: fixed;
     z-index: 1000;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
 }
 
 .header{
@@ -168,7 +169,7 @@ section .section-header{
 }
 
 section .food-list{
-    margin: 20px 0 0;
+    margin: 40px 0 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -177,8 +178,8 @@ section .food-list{
 section .food-list .card{
     width:254px ;
     height: 390px;
-    /* padding: 10px 20px; */
-    /* border: 1px solid #686b78; */
+    margin-bottom: 30px;
+    
 }
 
 
@@ -249,6 +250,88 @@ section .food-list .card .hide p{
     color: rgb(86, 149, 245);
     font-weight: bold;
 }
+
+
+
+
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+footer .top{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #3d4152;
+}
+
+footer .top ul{
+    list-style:none;
+}
+footer .top .company, .contact,.legal,.resource{
+   width: 300px;
+}
+
+footer .top .resource .section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+
+footer .top .title{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color:#686b78;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+footer .top ul li{
+    margin-top:20px ;
+    font-size: 15px;
+}
+
+
+
+footer .bottom{
+    background: #000;
+    padding: 30px 0;
+}
+
+footer .bottom ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom ul li{
+    display: inline-block;
+}
+
+footer .bottom ul li:nth-child(1) img{
+    width: 142px;
+    height: auto;
+}
+footer .bottom ul li:nth-child(3) img{
+    width: 24px;
+    height: auto;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
 
 
 

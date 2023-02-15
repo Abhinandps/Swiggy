@@ -159,14 +159,12 @@ section .section-header{
     top: 0;
     z-index: 11111;
     background-color: #fff;
-    margin-top: 50px;
     height: 80px;
     border-bottom: 1px solid #cccccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    padding-bottom:20px ;
 }
 
 
@@ -186,10 +184,20 @@ section .food-list .card{
     width:254px ;
     height: 390px;
     margin-bottom: 30px;
-    
+    cursor: pointer;
 }
 
+section .food-list .hidden{
+    border: 1px solid transparent;
+    padding: 15px;
+    box-sizing: content-box;
+    transition: 0.3s;
+}
 
+section .food-list .hidden:hover{
+    border: 1px solid #bbbbbb;
+    box-shadow: 5px 8px 9px -8px #929292;
+}
 
 
 
@@ -247,7 +255,20 @@ section .food-list .card .offer-code span{
 
 section .food-list .card .hide{
     margin: 15px 0 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
 }
+
+
+
+section .food-list .card:hover .hide{
+    margin: 15px 0 0;
+    visibility: visible;
+    opacity: 1;
+     
+}
+
 
 
 section .food-list .card .hide p{
